@@ -36,7 +36,9 @@ str(dataimport)
 library(ggplot2)
 total.steps <- tapply(dataimport$steps, dataimport$date, FUN = sum, na.rm = TRUE)
 qplot(total.steps, geom="histogram",binwidth = 1000) 
-mean(total.steps, na.rm = TRUE) 
+mean(total.steps, na.rm = TRUE)
+median(total.steps, na.rm = TRUE) 
+
 ```
 
 ## What is the average daily activity pattern?

@@ -76,11 +76,19 @@ qplot(total.steps, geom="histogram",binwidth = 1000)
 ![](PA1_template_files/figure-html/unnamed-chunk-1-1.png)
 
 ```r
-mean(total.steps, na.rm = TRUE) 
+mean(total.steps, na.rm = TRUE)
 ```
 
 ```
 ## [1] 9354.23
+```
+
+```r
+median(total.steps, na.rm = TRUE) 
+```
+
+```
+## [1] 10395
 ```
 
 ## What is the average daily activity pattern?
